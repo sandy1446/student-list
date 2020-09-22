@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          font-size: small;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <div id="no"></div>
+</body>
+</html>
+<script src="./main.js"></script>
+<script>
+    $.ajax({
+      url: "student.csv",
+      dataType: "text",
+    }).done(list);
+</script>
